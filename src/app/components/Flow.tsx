@@ -66,20 +66,12 @@ export default function Flow() {
     <div>
       <button
         onClick={handleAddNode}
-        style={{
-          margin: '10px',
-          padding: '8px 16px',
-          backgroundColor: '#d1d5db', // 淺灰色（tailwind 的 gray-300）
-          color: '#1f2937',            // 深灰文字（gray-800）
-          borderRadius: '6px',
-          border: '1px solid #9ca3af', // 邊框灰色（gray-400）
-          cursor: 'pointer',
-        }}
+        className="m-2 px-4 py-2 bg-gray-300 text-gray-800 rounded border border-gray-400 cursor-pointer"
       >
         新增節點
       </button>
 
-      <div style={{ width: '100%', height: '600px' }}>
+      <div className="w-full h-[600px]">
         <ReactFlow
           nodes={nodes}
           edges={edges}
